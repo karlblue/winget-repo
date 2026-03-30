@@ -1,32 +1,35 @@
-[
-  {
-    "id": "Google.Chrome.EXE",
-    "name": "Google Chrome",
-    "description": "Google Chrome 是一款快速、安全且免费的浏览器。",
-    "version": null,
-    "available_version": null,
-    "icon_url": "https://www.google.com/chrome/static/images/chrome-logo.svg",
-    "status": "idle",
-    "progress": 0.0
-  },
-  {
-    "id": "7zip.7zip",
-    "name": "7Zip",
-    "description": "7Zip 是一个压缩软件。",
-    "version": null,
-    "available_version": null,
-    "icon_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/7-Zip_Icon.svg",
-    "status": "idle",
-    "progress": 0.0
-  },
-  {
-    "id": "KeePassXCTeam.KeePassXC",
-    "name": "KeePassXC",
-    "description": "KeePassXC 是一个密码管理软件。",
-    "version": null,
-    "available_version": null,
-    "icon_url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/256x256/apps/keepassxc.png",
-    "status": "idle",
-    "progress": 0.0
-  }
-]
+{
+  "version": "0.1",
+  "essentials": [
+    {
+      "id": "Google.Chrome.EXE",
+      "name": "Google Chrome",
+      "description": "Google Chrome 是一款快速、安全且免费的浏览器。",
+      "version": null,
+      "available_version": null,
+      "icon_url": "https://www.google.com/chrome/static/images/chrome-logo.svg",
+      "status": "idle",
+      "progress": 0.0
+    },
+    {
+      "id": "7zip.7zip",
+      "name": "7Zip",
+      "description": "7Zip 是一个压缩软件。",
+      "version": null,
+      "available_version": null,
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/7-Zip_Icon.svg",
+      "status": "idle",
+      "progress": 0.0
+    },
+    {
+      "id": "KeePassXCTeam.KeePassXC",
+      "name": "KeePassXC",
+      "description": "KeePassXC 是一个密码管理软件。",
+      "version": null,
+      "available_version": null,
+      "icon_url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/256x256/apps/keepassxc.png",
+      "status": "idle",
+      "progress": 0.0
+    }
+  ]
+}
