@@ -34,8 +34,18 @@
     {
       "id": "Zoom.Zoom",
       "name": "Zoom",
-      "description": "KeePassXC 是一个密码管理软件。",
+      "description": "Zoom 是一个视频会议软件。",
       "version": null,
+      "available_version": null,
+      "icon_url": "",
+      "status": "idle",
+      "progress": 0.0
+    },
+    {
+      "id": "Zype.Compass",
+      "name": "Compass",
+      "description": "A standalone Windows CLI for Zype Programming Language.",
+      "version": "1.1.0",
       "available_version": null,
       "icon_url": "",
       "status": "idle",
