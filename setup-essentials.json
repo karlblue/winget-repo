@@ -2,48 +2,76 @@
   "version": "0.1",
   "essentials": [
     {
-      "id": "Google.Chrome.EXE",
-      "name": "Google Chrome",
-      "description": "Google Chrome 是一款快速、安全且免费的浏览器。",
-      "version": "146.0.7680.165",
-      "icon_url": "https://www.google.com/chrome/static/images/chrome-logo.svg"
-    },
-    {
       "id": "7zip.7zip",
       "name": "7Zip",
-      "description": "7Zip 是一个压缩软件。",
-      "version": "26.00",
-      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/7-Zip_Icon.svg"
+      "description": "7zip 是一个压缩软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/7zip.png"
+    },
+    {
+      "id": "Google.Chrome.EXE",
+      "name": "Google Chrome",
+      "description": "Google Chrome 是一款免费的浏览器。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/google-chrome.png"
+    },
+    {
+      "id": "Apache.OpenOffice",
+      "name": "OpenOffice",
+      "description": "Zoom 是一个离线文档编辑软件。",
+      "version": "4.116.9816",
+      "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png"
+    },
+    {
+      "id": "Microsoft.Teams",
+      "name": "Microsoft Teams",
+      "description": "Microsoft Teams 是一个即时通讯软件。",
+      "version": "",
+      "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png"
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
       "name": "KeePassXC",
       "description": "KeePassXC 是一个密码管理软件。",
       "version": "2.6.6",
-      "icon_url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/256x256/apps/keepassxc.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/keepassxc.png"
     },
     {
-      "id": "Zoom.Zoom",
-      "name": "Zoom",
-      "description": "Zoom 是一个视频会议软件。",
-      "version": null,
+      "id": "IDRIX.VeraCrypt",
+      "name": "VeraCrypt",
+      "description": "VeraCrypt 是一个加密软件。",
+      "version": "1.26.20",
+      "icon_url": "https://dl.volan.top/winget-repo/images/veracrypt.png"
+    },
+    {
+      "id": "PowTools.FileShredder",
+      "name": "File Shredder",
+      "description": "File Shredder 是一个文件擦除软件。",
+      "version": "",
       "icon_url": ""
     },
     {
-      "id": "Zype.Compass",
-      "name": "Compass",
-      "description": "A standalone Windows CLI for Zype Programming Language.",
-      "version": "1.1.0",
-      "icon_url": ""
+      "id": "VideoLAN.VLC",
+      "name": "VLC",
+      "description": "VLC 是一个视频播放器。",
+      "version": "",
+      "icon_url": "https://dl.volan.top/winget-repo/images/vlc.png"
     },
     {
       "id": "RevoUninstaller.RevoUninstaller",
       "name": "RevoUninstaller",
       "description": "",
       "version": "2.6.8",
-      "icon_url": "",
+      "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
       "use_manifest": true,
       "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml"
+    },
+    {
+      "id": "Adobe.Acrobat.Reader.64-bit",
+      "name": "Adobe Acrobat Reader",
+      "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
+      "version": "",
+      "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png"
     }
   ]
 }
