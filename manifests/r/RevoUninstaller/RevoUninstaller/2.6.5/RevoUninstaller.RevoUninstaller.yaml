@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.10.0.schema.json
 
 PackageIdentifier: RevoUninstaller.RevoUninstaller
-PackageVersion: 2.6.5
+PackageVersion: 2.6.8
 PackageLocale: en-US
 InstallerType: inno
 Scope: machine
@@ -13,7 +13,7 @@ UpgradeBehavior: install
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x86
-  InstallerUrl: https://dl.volan.top/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.5/revosetup.exe
+  InstallerUrl: https://dl.volan.top/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/revosetup.exe
   InstallerSha256: 8f90951459936a7e2d0eeb508297604bc3e2746d9f5e3646a3fcba1e35f4049b
 ManifestType: singleton
 ManifestVersion: 1.10.0
