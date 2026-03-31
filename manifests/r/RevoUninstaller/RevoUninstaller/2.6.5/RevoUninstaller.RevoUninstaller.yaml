@@ -1,0 +1,16 @@
+PackageIdentifier: RevoUninstaller.RevoUninstaller
+PackageVersion: 2.6.5
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x86
+  InstallerUrl: https://download.revouninstaller.com/download/revosetup.exe
+  InstallerSha256: 8f90951459936a7e2d0eeb508297604bc3e2746d9f5e3646a3fcba1e35f4049b
+ManifestType: installer
+ManifestVersion: 1.10.0
