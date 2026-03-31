@@ -35,6 +35,13 @@
       "description": "A standalone Windows CLI for Zype Programming Language.",
       "version": "1.1.0",
       "icon_url": ""
+    },
+    {
+      "id": "AnyDesk.AnyDesk",
+      "name": "Anydesk",
+      "description": "",
+      "version": null,
+      "icon_url": ""
     }
   ]
 }
