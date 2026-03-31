@@ -37,11 +37,13 @@
       "icon_url": ""
     },
     {
-      "id": "AnyDesk.AnyDesk",
-      "name": "Anydesk",
+      "id": "RevoUninstaller.RevoUninstaller",
+      "name": "RevoUninstaller",
       "description": "",
-      "version": null,
+      "version": "2.6.5",
       "icon_url": ""
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.5/RevoUninstaller.RevoUninstaller.yaml"
     }
   ]
 }
