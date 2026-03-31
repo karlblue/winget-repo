@@ -6,50 +6,35 @@
       "name": "Google Chrome",
       "description": "Google Chrome 是一款快速、安全且免费的浏览器。",
       "version": "146.0.7680.165",
-      "available_version": null,
-      "icon_url": "https://www.google.com/chrome/static/images/chrome-logo.svg",
-      "status": "idle",
-      "progress": 0.0
+      "icon_url": "https://www.google.com/chrome/static/images/chrome-logo.svg"
     },
     {
       "id": "7zip.7zip",
       "name": "7Zip",
       "description": "7Zip 是一个压缩软件。",
       "version": "26.00",
-      "available_version": null,
-      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/7-Zip_Icon.svg",
-      "status": "idle",
-      "progress": 0.0
+      "icon_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/7-Zip_Icon.svg"
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
       "name": "KeePassXC",
       "description": "KeePassXC 是一个密码管理软件。",
       "version": "2.6.6",
-      "available_version": null,
-      "icon_url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/256x256/apps/keepassxc.png",
-      "status": "idle",
-      "progress": 0.0
+      "icon_url": "https://raw.githubusercontent.com/keepassxreboot/keepassxc/develop/share/icons/application/256x256/apps/keepassxc.png"
     },
     {
       "id": "Zoom.Zoom",
       "name": "Zoom",
       "description": "Zoom 是一个视频会议软件。",
       "version": null,
-      "available_version": null,
-      "icon_url": "",
-      "status": "idle",
-      "progress": 0.0
+      "icon_url": ""
     },
     {
       "id": "Zype.Compass",
       "name": "Compass",
       "description": "A standalone Windows CLI for Zype Programming Language.",
       "version": "1.1.0",
-      "available_version": null,
-      "icon_url": "",
-      "status": "idle",
-      "progress": 0.0
+      "icon_url": ""
     }
   ]
 }
