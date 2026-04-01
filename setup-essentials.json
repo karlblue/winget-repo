@@ -26,7 +26,7 @@
       "id": "Microsoft.Teams",
       "name": "Microsoft Teams",
       "description": "Microsoft Teams 是一个即时通讯软件。",
-      "version": "",
+      "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png"
     },
     {
@@ -47,14 +47,14 @@
       "id": "PowTools.FileShredder",
       "name": "File Shredder",
       "description": "File Shredder 是一个文件擦除软件。",
-      "version": "",
+      "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png"
     },
     {
       "id": "VideoLAN.VLC",
       "name": "VLC",
       "description": "VLC 是一个视频播放器。",
-      "version": "",
+      "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/vlc.png"
     },
     {
@@ -70,7 +70,7 @@
       "id": "Adobe.Acrobat.Reader.64-bit",
       "name": "Adobe Acrobat Reader",
       "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
-      "version": "",
+      "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png"
     }
   ]
