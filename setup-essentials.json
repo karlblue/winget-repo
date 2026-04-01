@@ -6,7 +6,7 @@
       "name": "7Zip",
       "description": "7zip 是一个压缩软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/7zip.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/7-zip.svg"
     },
     {
       "id": "Google.Chrome.EXE",
