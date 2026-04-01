@@ -18,7 +18,7 @@
     {
       "id": "Apache.OpenOffice",
       "name": "OpenOffice",
-      "description": "Zoom 是一个离线文档编辑软件。",
+      "description": "OpenOffice 是一个离线文档编辑软件。",
       "version": "4.116.9816",
       "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png"
     },
@@ -60,7 +60,7 @@
     {
       "id": "RevoUninstaller.RevoUninstaller",
       "name": "RevoUninstaller",
-      "description": "",
+      "description": "Revo Uninstaller 是一个软件卸载工具。",
       "version": "2.6.8",
       "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
       "use_manifest": true,
