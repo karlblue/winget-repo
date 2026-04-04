@@ -1,0 +1,277 @@
+﻿[
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\General",
+    "values": {
+      "AU on startup": {
+        "v_type": "Dword",
+        "data": 0
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\Uninstaller",
+    "values": {
+      "Create System Restore Pont": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "Maximize uninstall wizard": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "Select leftovers by default": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Browsers\\CHR",
+    "values": {
+      "Clear History of Visited Internet Web Pages": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Temporary Internet Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Cookies": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "Delete Download History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Form History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Session History": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Browsers\\EDGE",
+    "values": {
+      "Clear History of Visited Internet Web Pages": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Temporary Internet Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Cookies": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "Delete Download History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Form History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Session History": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Browsers\\FF",
+    "values": {
+      "Clear History of Visited Internet Web Pages": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Temporary Internet Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Cookies": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Download History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Form History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Session History": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Browsers\\IE",
+    "values": {
+      "Clear History of Visited Internet Web Pages": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Address Bar History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Temporary Internet Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Cookies": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Index.dat files": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Browsers\\Opera",
+    "values": {
+      "Clear History of Visited Internet Web Pages": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Download History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Temporary Internet Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Cookies": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Session History": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\MSOffice",
+    "values": {
+      "CWRDH": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "CERDH": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "CARDH": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "CPPRDH": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "CFPEDH": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKCU",
+    "base_path": "Software\\VS Revo Group\\Revo Uninstaller\\TrackCleaner\\Windows",
+    "values": {
+      "Clear Recent Documents History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Start Menu Run History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Find File History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Printers, Computers and People Find History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Paint Recent File History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Wordpad Recent File History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Regedit Last Opened Key History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Common Dialog Open Save Recent History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Clear Common Dialog Last Visited Folder History": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Start Menu Click Logs": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Empty Clipboard": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Empty Recycle Bin": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Windows Temporary Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Memory Dump Files": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Chkdsk recovered file fragments": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "Delete Thumbnail Cache": {
+        "v_type": "Dword",
+        "data": 1
+      }
+    }
+  }
+]

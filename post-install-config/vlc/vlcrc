@@ -1,0 +1,10 @@
+[qt] # Qt interface
+qt-recentplay=0
+qt-privacy-ask=0
+qt-updates-notif=0
+
+[core] # core program
+video-title-show=0
+vout=any
+repeat=1
+metadata-network-access=0

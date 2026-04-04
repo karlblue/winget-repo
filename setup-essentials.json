@@ -6,56 +6,156 @@
       "name": "7Zip",
       "description": "7zip 是一个压缩软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/7-zip.svg"
+      "icon_url": "https://dl.volan.top/winget-repo/images/7-zip.svg",
+      "post_install": [
+        {
+          "type": "file_delete",
+          "path": "C:\\Program Files\\7-Zip\\7-zip.chm"
+        }
+      ]
     },
     {
       "id": "Google.Chrome.EXE",
       "name": "Google Chrome",
       "description": "Google Chrome 是一款免费的浏览器。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/google-chrome.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/google-chrome.png",
+      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/chrome/chrome.json"
     },
     {
       "id": "Apache.OpenOffice",
       "name": "OpenOffice",
       "description": "OpenOffice 是一个离线文档编辑软件。",
       "version": "4.116.9816",
-      "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png",
+      "post_install": [
+        {
+          "type": "command",
+          "run": "\"C:\\Program Files (x86)\\OpenOffice 4\\program\\soffice.exe\" -headless -nologo -nodefault"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/registrymodifications.xcu",
+          "dest": "%APPDATA%\\OpenOffice\\4\\user\\registrymodifications.xcu"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/historymanager2.1.oxt",
+          "dest": "%TEMP%\\win-softmgr\\historymanager2.1.oxt"
+        },
+        {
+          "type": "command",
+          "run": "echo y | \"C:\\Program Files (x86)\\OpenOffice 4\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\""
+        }
+      ]
     },
     {
       "id": "Microsoft.Teams",
       "name": "Microsoft Teams",
       "description": "Microsoft Teams 是一个即时通讯软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/msteams/Microsoft-Teams.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\Microsoft Teams.lnk"
+        }
+      ]
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
       "name": "KeePassXC",
       "description": "KeePassXC 是一个密码管理软件。",
       "version": "2.6.6",
-      "icon_url": "https://dl.volan.top/winget-repo/images/keepassxc.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/keepassxc.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/keepassxc/keepassxc.ini",
+          "dest": "%APPDATA%\\KeePassXC\\keepassxc.ini"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/keepassxc/KeePassXC.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\KeePassXC.lnk"
+        },
+        {
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+          "values": {
+            "KeePassXC": {
+              "v_type": "Delete",
+              "data": null
+            }
+          }
+        }
+      ]
     },
     {
       "id": "IDRIX.VeraCrypt",
       "name": "VeraCrypt",
       "description": "VeraCrypt 是一个加密软件。",
       "version": "1.26.20",
-      "icon_url": "https://dl.volan.top/winget-repo/images/veracrypt.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/veracrypt.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/veracrypt/Configuration.xml",
+          "dest": "%APPDATA%\\VeraCrypt\\Configuration.xml"
+        }
+      ]
     },
     {
       "id": "PowTools.FileShredder",
       "name": "File Shredder",
       "description": "File Shredder 是一个文件擦除软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png",
+      "post_install": [
+        {
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\Shredder\\Settings",
+          "values": {
+            "DefaultAlgorithm_ItemIndex": {
+              "v_type": "Dword",
+              "data": 3
+            }
+          }
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/fileshredder/File-Shredder.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\File Shredder.lnk"
+        }
+      ]
     },
     {
       "id": "VideoLAN.VLC",
       "name": "VLC",
       "description": "VLC 是一个视频播放器。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/vlc.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/vlc.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/vlc/vlcrc",
+          "dest": "%APPDATA%\\vlc\\vlcrc"
+        },
+        {
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\VideoLAN\\VLC",
+          "values": {
+            "Lang": {
+              "v_type": "String",
+              "data": "zh_CN"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "RevoUninstaller.RevoUninstaller",
@@ -64,14 +164,28 @@
       "version": "2.6.8",
       "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
       "use_manifest": true,
-      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml"
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml",
+      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revo_uninstaller.json"
     },
     {
       "id": "Adobe.Acrobat.Reader.64-bit",
       "name": "Adobe Acrobat Reader",
       "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png",
+      "post_install": [
+        {
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\Adobe\\Adobe Acrobat\\DC\\AVGeneral",
+          "values": {
+            "iMaxMRUCntToBeStored": {
+              "v_type": "Dword",
+              "data": 0
+            }
+          }
+        }
+      ]
     }
   ]
 }

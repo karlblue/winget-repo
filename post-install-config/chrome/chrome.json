@@ -1,0 +1,177 @@
+﻿[
+  {
+    "type": "registry_batch",
+    "root": "HKLM",
+    "base_path": "SOFTWARE\\Policies\\Google\\Chrome\\ExtensionSettings\\ddkjiahejlhfcafbddmgiahcphecmpfh",
+    "values": {
+      "installation_mode": {
+        "v_type": "String",
+        "data": "normal_installed"
+      },
+      "update_url": {
+        "v_type": "String",
+        "data": "https://clients2.google.com/service/update2/crx"
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKLM",
+    "base_path": "SOFTWARE\\Policies\\Google\\Chrome\\Recommended",
+    "values": {
+      "AutofillAddressEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "AutofillCreditCardEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "DefaultGeolocationSetting": {
+        "v_type": "Dword",
+        "data": 2
+      },
+      "PasswordManagerEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PaymentMethodQueryEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PrivacySandboxAdMeasurementEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PrivacySandboxAdTopicsEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PrivacySandboxPromptEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PrivacySandboxSiteEnabledAdsEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKLM",
+    "base_path": "SOFTWARE\\Policies\\Microsoft\\Edge\\ExtensionSettings\\odfafepnkmbhccpbejgmiehpchacaeak",
+    "values": {
+      "installation_mode": {
+        "v_type": "String",
+        "data": "normal_installed"
+      },
+      "update_url": {
+        "v_type": "String",
+        "data": "https://edge.microsoft.com/extensionwebstorebase/v1/crx"
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKLM",
+    "base_path": "SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended",
+    "values": {
+      "AlternateErrorPagesEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "AutofillAddressEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "AutofillCreditCardEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "AutofillMembershipsEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "ConfigureDoNotTrack": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "ControlDefaultStateOfAllowExtensionFromOtherStoresSettingEnabled": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "DefaultGeolocationSetting": {
+        "v_type": "Dword",
+        "data": 2
+      },
+      "DiagnosticData": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "EdgeShoppingAssistantEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "EdgeWalletCheckoutEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PasswordManagerEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PaymentMethodQueryEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PersonalizationReportingEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "PrimaryPasswordSetting": {
+        "v_type": "Dword",
+        "data": 3
+      },
+      "RelatedMatchesCloudServiceEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "ResolveNavigationErrorsUseWebService": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "ShowMicrosoftRewards": {
+        "v_type": "Dword",
+        "data": 0
+      },
+      "TabServicesEnabled": {
+        "v_type": "Dword",
+        "data": 0
+      }
+    }
+  },
+  {
+    "type": "registry_batch",
+    "root": "HKLM",
+    "base_path": "SOFTWARE\\Policies\\Microsoft\\Edge\\Recommended\\ManagedSearchEngines\\1",
+    "values": {
+      "is_default": {
+        "v_type": "Dword",
+        "data": 1
+      },
+      "keyword": {
+        "v_type": "String",
+        "data": "google.com"
+      },
+      "name": {
+        "v_type": "String",
+        "data": "Google"
+      },
+      "search_url": {
+        "v_type": "String",
+        "data": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchboxStats}{google:searchFieldtrialParameter}{google:iOSSearchLanguage}{google:prefetchSource}{google:searchClient}{google:sourceId}{google:contextualSearchVersion}ie={inputEncoding}"
+      }
+    }
+  }
+]
