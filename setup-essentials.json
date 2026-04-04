@@ -165,7 +165,7 @@
       "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
       "use_manifest": true,
       "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml",
-      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revo_uninstaller.json"
+      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revouninstaller.json"
     },
     {
       "id": "Adobe.Acrobat.Reader.64-bit",
