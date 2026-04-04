@@ -31,7 +31,8 @@
       "post_install": [
         {
           "type": "command",
-          "run": "\"C:\\Program Files (x86)\\OpenOffice 4\\program\\soffice.exe\" -headless -nologo -nodefault"
+          "run": "\"C:\\Program Files (x86)\\OpenOffice 4\\program\\soffice.exe\" -headless -nologo -nodefault",
+          "delay_ms": 2000
         },
         {
           "type": "file_copy",
@@ -45,7 +46,8 @@
         },
         {
           "type": "command",
-          "run": "echo y | \"C:\\Program Files (x86)\\OpenOffice 4\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\""
+          "run": "echo y | \"C:\\Program Files (x86)\\OpenOffice 4\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\"",
+          "delay_ms": 2000
         }
       ]
     },
