@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.12.0.schema.json
+
+PackageIdentifier: Google.Chrome
+PackageVersion: 146.0.7680.178
+PackageLocale: zh-CN
+Publisher: Google LLC
+PackageName: Google Chrome
+License: 免费软件
+ShortDescription: 快速安全的网络浏览器，专为您而打造
+InstallerType: wix
+Scope: machine
+UpgradeBehavior: install
+Protocols:
+- http
+- https
+- mailto
+- mms
+- tel
+- webcal
+FileExtensions:
+- htm
+- html
+- pdf
+- shtml
+- svg
+- webp
+- xht
+- xhtml
+ElevationRequirement: elevatesSelf
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.volan.top/winget-repo/manifests/g/Google/Chrome/146.0.7680.178/googlechromestandaloneenterprise64.msi
+  InstallerSha256: DB9C5E0519C83FBECFE5E5AC1FAC0FE44C15B3943C9611D52759FE474436D31E
+  ProductCode: '{6939CB9C-515D-372C-AF4A-BA8D6A40CC4B}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{6939CB9C-515D-372C-AF4A-BA8D6A40CC4B}'
+    UpgradeCode: '{C1DFDF69-5945-32F2-A35E-EE94C99C7CF4}'
+ManifestType: singleton
+ManifestVersion: 1.12.0
