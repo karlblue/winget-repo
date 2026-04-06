@@ -15,11 +15,13 @@
       ]
     },
     {
-      "id": "Google.Chrome.EXE",
+      "id": "Google.Chrome",
       "name": "Google Chrome",
       "description": "Google Chrome 是一款免费的浏览器。",
-      "version": null,
+      "version": "146.0.7680.178",
       "icon_url": "https://dl.volan.top/winget-repo/images/google-chrome.png",
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/Google/Chrome/146.0.7680.178/Google.Chrome.yaml",
       "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/chrome/chrome.json"
     },
     {
