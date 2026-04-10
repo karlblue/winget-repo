@@ -43,6 +43,14 @@
       "post_install": []
     },
     {
+      "id": "BlueStack.BlueStacks",
+      "name": "BlueStacks 5",
+      "description": "BlueStacks 是一个安卓模拟器。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/bluestacks.png",
+      "post_install": []
+    },
+    {
       "id": "Google.Chrome",
       "name": "Google Chrome",
       "description": "Google Chrome 是一款免费的浏览器。",
@@ -161,7 +169,7 @@
       ]
     },
     {
-      "id": "GoversoftLLC.PrivaZer",
+      "id": "ARP\\Machine\\X86\\PrivaZer",
       "name":"PrivaZer",
       "description": "PrivaZer 是一个电脑清理工具。",
       "version": "4.0.120.3",
@@ -186,6 +194,14 @@
       "description": "Signal 是一个端对端加密的即时通讯软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/signal.png",
+      "post_install": []
+    },
+    {
+      "id": "Surfshark.Surfshark",
+      "name": "Surfshark VPN",
+      "description": "Surfshark 是一个不限制设备数量的 VPN。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/surfshark.png",
       "post_install": []
     },
     {
@@ -215,6 +231,14 @@
           "dest": "%APPDATA%\\VeraCrypt\\Configuration.xml"
         }
       ]
+    },
+    {
+      "id": "Oracle.VirtualBox",
+      "name": "VirtualBox",
+      "description": "VirtualBox 是一个开源的虚拟机软件。",
+      "version": "7.2.6",
+      "icon_url": "https://dl.volan.top/winget-repo/images/virtualbox.png",
+      "post_install": []
     },
     {
       "id": "VideoLAN.VLC",
