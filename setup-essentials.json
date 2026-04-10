@@ -15,6 +15,34 @@
       ]
     },
     {
+      "id": "Adobe.Acrobat.Reader.64-bit",
+      "name": "Adobe Acrobat Reader",
+      "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png",
+      "post_install": [
+        {
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\Adobe\\Adobe Acrobat\\DC\\AVGeneral",
+          "values": {
+            "iMaxMRUCntToBeStored": {
+              "v_type": "Dword",
+              "data": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "AnyDesk.AnyDesk",
+      "name": "AnyDesk",
+      "description": "AnyDesk 是一个远程控制软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/anydesk.png",
+      "post_install": []
+    },
+    {
       "id": "Google.Chrome",
       "name": "Google Chrome",
       "description": "Google Chrome 是一款免费的浏览器。",
@@ -25,47 +53,37 @@
       "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/chrome/chrome.json"
     },
     {
-      "id": "Apache.OpenOffice",
-      "name": "OpenOffice",
-      "description": "OpenOffice 是一个离线文档编辑软件。",
-      "version": "4.116.9816",
-      "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png",
+      "id": "PowTools.FileShredder",
+      "name": "File Shredder",
+      "description": "File Shredder 是一个文件擦除软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png",
       "post_install": [
         {
-          "type": "command",
-          "run": "\"C:\\Program Files (x86)\\OpenOffice 4\\program\\soffice.exe\" -headless -nologo -nodefault",
-          "delay_ms": 2000
+          "type": "registry_batch",
+          "root": "HKCU",
+          "base_path": "Software\\Shredder\\Settings",
+          "values": {
+            "DefaultAlgorithm_ItemIndex": {
+              "v_type": "Dword",
+              "data": 3
+            }
+          }
         },
         {
           "type": "file_copy",
-          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/registrymodifications.xcu",
-          "dest": "%APPDATA%\\OpenOffice\\4\\user\\registrymodifications.xcu"
-        },
-        {
-          "type": "file_copy",
-          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/historymanager2.1.oxt",
-          "dest": "%TEMP%\\win-softmgr\\historymanager2.1.oxt"
-        },
-        {
-          "type": "command",
-          "run": "echo y | \"C:\\Program Files (x86)\\OpenOffice 4\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\"",
-          "delay_ms": 2000
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/fileshredder/File-Shredder.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\File Shredder.lnk"
         }
       ]
     },
     {
-      "id": "Microsoft.Teams",
-      "name": "Microsoft Teams",
-      "description": "Microsoft Teams 是一个即时通讯软件。",
+      "id": "REALiX.HWiNFO",
+      "name": "HWiNFO",
+      "description": "HWiNFO 是一个专业的系统诊断工具。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png",
-      "post_install": [
-        {
-          "type": "file_copy",
-          "src": "https://karlblue.github.io/winget-repo/post-install-config/msteams/Microsoft-Teams.lnk",
-          "dest": "%USERPROFILE%\\Desktop\\Microsoft Teams.lnk"
-        }
-      ]
+      "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png",
+      "post_install": []
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
@@ -98,6 +116,93 @@
       ]
     },
     {
+      "id": "TheDocumentFoundation.LibreOffice",
+      "name": "LibreOffice",
+      "description": "LibreOffice 是一个离线文档、表格编辑软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/libreoffice.png",
+      "post_install": []
+    },
+    {
+      "id": "nomacs.nomacs",
+      "name": "nomacs",
+      "description": "nomacs 是一个看图软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/nomacs.png",
+      "post_install": []
+    },
+    {
+      "id": "Apache.OpenOffice",
+      "name": "OpenOffice",
+      "description": "OpenOffice 是一个离线文档编辑软件。",
+      "version": "4.116.9816",
+      "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png",
+      "post_install": [
+        {
+          "type": "command",
+          "run": "\"C:\\Program Files (x86)\\OpenOffice 4\\program\\soffice.exe\" -headless -nologo -nodefault",
+          "delay_ms": 2000
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/registrymodifications.xcu",
+          "dest": "%APPDATA%\\OpenOffice\\4\\user\\registrymodifications.xcu"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/historymanager2.1.oxt",
+          "dest": "%TEMP%\\win-softmgr\\historymanager2.1.oxt"
+        },
+        {
+          "type": "command",
+          "run": "echo y | \"C:\\Program Files (x86)\\OpenOffice 4\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\"",
+          "delay_ms": 2000
+        }
+      ]
+    },
+    {
+      "id": "GoversoftLLC.PrivaZer",
+      "name":"PrivaZer",
+      "description": "PrivaZer 是一个电脑清理工具。",
+      "version": "4.0.120.3",
+      "icon_url": "https://dl.volan.top/winget-repo/images/privazer.png",
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml",
+      "post_install": []
+    },
+    {
+      "id": "RevoUninstaller.RevoUninstaller",
+      "name": "RevoUninstaller",
+      "description": "Revo Uninstaller 是一个软件卸载工具。",
+      "version": "2.6.8",
+      "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml",
+      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revouninstaller.json"
+    },
+    {
+      "id": "OpenWhisperSystems.Signal",
+      "name": "Signal",
+      "description": "Signal 是一个端对端加密的即时通讯软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/signal.png",
+      "post_install": []
+    },
+    {
+      "id": "Microsoft.Teams",
+      "name": "Microsoft Teams",
+      "description": "Microsoft Teams 是一个即时通讯软件。",
+      "version": null,
+      "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/msteams/Microsoft-Teams.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\Microsoft Teams.lnk"
+        }
+      ]
+    },
+    {
       "id": "IDRIX.VeraCrypt",
       "name": "VeraCrypt",
       "description": "VeraCrypt 是一个加密软件。",
@@ -108,31 +213,6 @@
           "type": "file_copy",
           "src": "https://karlblue.github.io/winget-repo/post-install-config/veracrypt/Configuration.xml",
           "dest": "%APPDATA%\\VeraCrypt\\Configuration.xml"
-        }
-      ]
-    },
-    {
-      "id": "PowTools.FileShredder",
-      "name": "File Shredder",
-      "description": "File Shredder 是一个文件擦除软件。",
-      "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png",
-      "post_install": [
-        {
-          "type": "registry_batch",
-          "root": "HKCU",
-          "base_path": "Software\\Shredder\\Settings",
-          "values": {
-            "DefaultAlgorithm_ItemIndex": {
-              "v_type": "Dword",
-              "data": 3
-            }
-          }
-        },
-        {
-          "type": "file_copy",
-          "src": "https://karlblue.github.io/winget-repo/post-install-config/fileshredder/File-Shredder.lnk",
-          "dest": "%USERPROFILE%\\Desktop\\File Shredder.lnk"
         }
       ]
     },
@@ -156,36 +236,6 @@
             "Lang": {
               "v_type": "String",
               "data": "zh_CN"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "RevoUninstaller.RevoUninstaller",
-      "name": "RevoUninstaller",
-      "description": "Revo Uninstaller 是一个软件卸载工具。",
-      "version": "2.6.8",
-      "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
-      "use_manifest": true,
-      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml",
-      "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revouninstaller.json"
-    },
-    {
-      "id": "Adobe.Acrobat.Reader.64-bit",
-      "name": "Adobe Acrobat Reader",
-      "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
-      "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png",
-      "post_install": [
-        {
-          "type": "registry_batch",
-          "root": "HKCU",
-          "base_path": "Software\\Adobe\\Adobe Acrobat\\DC\\AVGeneral",
-          "values": {
-            "iMaxMRUCntToBeStored": {
-              "v_type": "Dword",
-              "data": 0
             }
           }
         }
