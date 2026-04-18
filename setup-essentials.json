@@ -40,15 +40,23 @@
       "description": "AnyDesk 是一个远程控制软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/anydesk.png",
-      "post_install": []
+      "post_install": [
+        {
+          "type": "file_delete",
+          "path": "%USERPROFILE%\\Desktop\\service.conf.lock"
+        },
+        {
+          "type": "file_delete",
+          "path": "%USERPROFILE%\\Desktop\\system.conf.lock"
+        }
+      ]
     },
     {
       "id": "BlueStack.BlueStacks",
       "name": "BlueStacks 5",
       "description": "BlueStacks 是一个安卓模拟器。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/bluestacks.png",
-      "post_install": []
+      "icon_url": "https://dl.volan.top/winget-repo/images/bluestacks.png"
     },
     {
       "id": "Google.Chrome",
@@ -90,8 +98,7 @@
       "name": "HWiNFO",
       "description": "HWiNFO 是一个专业的系统诊断工具。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png",
-      "post_install": []
+      "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png"
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
@@ -129,7 +136,28 @@
       "description": "LibreOffice 是一个离线文档、表格编辑软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/libreoffice.png",
-      "post_install": []
+      "post_install": [
+        {
+          "type": "command",
+          "run": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" -headless -nologo -nodefault",
+          "delay_ms": 2000
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/registrymodifications.xcu",
+          "dest": "%APPDATA%\\LibreOffice\\4\\user\\registrymodifications.xcu"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/historymanager2.1.oxt",
+          "dest": "%TEMP%\\win-softmgr\\historymanager2.1.oxt"
+        },
+        {
+          "type": "command",
+          "run": "echo y | \"C:\\Program Files\\LibreOffice\\program\\unopkg.com\" add --shared -s \"%TEMP%\\win-softmgr\\historymanager2.1.oxt\"",
+          "delay_ms": 2000
+        }
+      ]
     },
     {
       "id": "nomacs.nomacs",
@@ -137,7 +165,18 @@
       "description": "nomacs 是一个看图软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/nomacs.png",
-      "post_install": []
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/nomacs/nomacs.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\nomacs.lnk"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/nomacs/settings.ini",
+          "dest": "%APPDATA%\\nomacs\\Image Lounge\\settings.ini"
+        }
+      ]
     },
     {
       "id": "Apache.OpenOffice",
@@ -175,8 +214,7 @@
       "version": "4.0.120.3",
       "icon_url": "https://dl.volan.top/winget-repo/images/privazer.png",
       "use_manifest": true,
-      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml",
-      "post_install": []
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml"
     },
     {
       "id": "RevoUninstaller.RevoUninstaller",
@@ -193,16 +231,14 @@
       "name": "Signal",
       "description": "Signal 是一个端对端加密的即时通讯软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/signal.png",
-      "post_install": []
+      "icon_url": "https://dl.volan.top/winget-repo/images/signal.png"
     },
     {
       "id": "Surfshark.Surfshark",
       "name": "Surfshark VPN",
       "description": "Surfshark 是一个不限制设备数量的 VPN。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/surfshark.png",
-      "post_install": []
+      "icon_url": "https://dl.volan.top/winget-repo/images/surfshark.png"
     },
     {
       "id": "Microsoft.Teams",
@@ -238,7 +274,28 @@
       "description": "VirtualBox 是一个开源的虚拟机软件。",
       "version": "7.2.6",
       "icon_url": "https://dl.volan.top/winget-repo/images/virtualbox.png",
-      "post_install": []
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/virtualbox/VirtualBox.xml",
+          "dest": "%USERPROFILE%\\.VirtualBox\\VirtualBox.xml"
+        },
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/virtualbox/Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack",
+          "dest": "%USERPROFILE%\\VirtualBox VMS\\Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack",
+          "delay_ms": 1000
+        },
+        {
+          "type": "command",
+          "run": "\"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" extpack install --replace --accept-license=eb31505e56e9b4d0fbca139104da41ac6f6b98f8e78968bdf01b1f3da3c4f9ae \"%USERPROFILE%\\VirtualBox VMS\\Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack\"",
+          "delay_ms": 2000
+        },
+        {
+          "type": "file_delete",
+          "path": "%USERPROFILE%\\VirtualBox VMS\\Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack"
+        }
+      ]
     },
     {
       "id": "VideoLAN.VLC",
