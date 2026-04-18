@@ -138,11 +138,6 @@
       "icon_url": "https://dl.volan.top/winget-repo/images/libreoffice.png",
       "post_install": [
         {
-          "type": "command",
-          "run": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" -headless -nologo -nodefault",
-          "delay_ms": 2000
-        },
-        {
           "type": "file_copy",
           "src": "https://karlblue.github.io/winget-repo/post-install-config/openoffice/registrymodifications.xcu",
           "dest": "%APPDATA%\\LibreOffice\\4\\user\\registrymodifications.xcu"
@@ -288,7 +283,7 @@
         },
         {
           "type": "command",
-          "run": "\"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" extpack install --replace --accept-license=eb31505e56e9b4d0fbca139104da41ac6f6b98f8e78968bdf01b1f3da3c4f9ae \"%USERPROFILE%\\VirtualBox VMS\\Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack\"",
+          "run": "echo y | \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" extpack install --replace --accept-license=eb31505e56e9b4d0fbca139104da41ac6f6b98f8e78968bdf01b1f3da3c4f9ae \"%USERPROFILE%\\VirtualBox VMS\\Oracle_VirtualBox_Extension_Pack-7.2.6.vbox-extpack\"",
           "delay_ms": 2000
         },
         {
