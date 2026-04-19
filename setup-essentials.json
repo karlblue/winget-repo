@@ -7,6 +7,7 @@
       "description": "7zip 是一个压缩软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/7-zip.svg",
+      "category": "general",
       "post_install": [
         {
           "type": "file_delete",
@@ -20,6 +21,7 @@
       "description": "Adobe Acrobat Reader 是一个免费的 PDF 查看器。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/adobe-acrobat-reader.png",
+      "category": "general",
       "post_install": [
         {
           "type": "registry_batch",
@@ -40,6 +42,7 @@
       "description": "AnyDesk 是一个远程控制软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/anydesk.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_delete",
@@ -56,7 +59,8 @@
       "name": "BlueStacks 5",
       "description": "BlueStacks 是一个安卓模拟器。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/bluestacks.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/bluestacks.png",
+      "category": "special"
     },
     {
       "id": "Google.Chrome",
@@ -64,6 +68,7 @@
       "description": "Google Chrome 是一款免费的浏览器。",
       "version": "146.0.7680.178",
       "icon_url": "https://dl.volan.top/winget-repo/images/google-chrome.png",
+      "category": "general",
       "use_manifest": true,
       "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/Google/Chrome/146.0.7680.178/Google.Chrome.yaml",
       "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/chrome/chrome.json"
@@ -74,6 +79,7 @@
       "description": "File Shredder 是一个文件擦除软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/file-shredder.png",
+      "category": "general",
       "post_install": [
         {
           "type": "registry_batch",
@@ -99,6 +105,7 @@
       "description": "HWiNFO 是一个专业的系统诊断工具。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -113,6 +120,7 @@
       "description": "KeePassXC 是一个密码管理软件。",
       "version": "2.6.6",
       "icon_url": "https://dl.volan.top/winget-repo/images/keepassxc.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -143,6 +151,7 @@
       "description": "LibreOffice 是一个离线文档、表格编辑软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/libreoffice.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -167,6 +176,7 @@
       "description": "nomacs 是一个看图软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/nomacs.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -186,6 +196,7 @@
       "description": "OpenOffice 是一个离线文档编辑软件。",
       "version": "4.116.9816",
       "icon_url": "https://dl.volan.top/winget-repo/images/apache-openoffice.png",
+      "category": "general",
       "post_install": [
         {
           "type": "command",
@@ -215,6 +226,7 @@
       "description": "PrivaZer 是一个电脑清理工具。",
       "version": "4.0.120.3",
       "icon_url": "https://dl.volan.top/winget-repo/images/privazer.png",
+      "category": "general",
       "use_manifest": true,
       "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml",
       "post_install": [
@@ -231,6 +243,7 @@
       "description": "Revo Uninstaller 是一个软件卸载工具。",
       "version": "2.6.8",
       "icon_url": "https://dl.volan.top/winget-repo/images/revo-uninstaller.png",
+      "category": "general",
       "use_manifest": true,
       "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RevoUninstaller/RevoUninstaller/2.6.8/RevoUninstaller.RevoUninstaller.yaml",
       "post_install_url": "https://karlblue.github.io/winget-repo/post-install-config/revouninstaller/revouninstaller.json"
@@ -240,14 +253,26 @@
       "name": "Signal",
       "description": "Signal 是一个端对端加密的即时通讯软件。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/signal.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/signal.png",
+      "category": "general"
+    },
+    {
+      "id": "RobYapchanyk.StrokesPlus",
+      "name": "StrokesPlus",
+      "description": "StrokesPlus 是一个鼠标手势软件。",
+      "version": "0.5.8.0",
+      "icon_url": "https://dl.volan.top/winget-repo/images/strokesplus.png",
+      "category": "special",
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/r/RobYapchanyk/StrokesPlus/0.5.8.0/RobYapchanyk.StrokesPlus.yaml"
     },
     {
       "id": "Surfshark.Surfshark",
       "name": "Surfshark VPN",
       "description": "Surfshark 是一个不限制设备数量的 VPN。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/surfshark.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/surfshark.png",
+      "category": "special"
     },
     {
       "id": "Microsoft.Teams",
@@ -255,6 +280,7 @@
       "description": "Microsoft Teams 是一个即时通讯软件。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/microsoft-teams.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -269,6 +295,7 @@
       "description": "VeraCrypt 是一个加密软件。",
       "version": "1.26.20",
       "icon_url": "https://dl.volan.top/winget-repo/images/veracrypt.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -283,6 +310,7 @@
       "description": "VirtualBox 是一个开源的虚拟机软件。",
       "version": "7.2.6",
       "icon_url": "https://dl.volan.top/winget-repo/images/virtualbox.png",
+      "category": "special",
       "post_install": [
         {
           "type": "file_copy",
@@ -312,6 +340,7 @@
       "description": "VLC 是一个视频播放器。",
       "version": null,
       "icon_url": "https://dl.volan.top/winget-repo/images/vlc.png",
+      "category": "general",
       "post_install": [
         {
           "type": "file_copy",
@@ -330,6 +359,16 @@
           }
         }
       ]
+    },
+    {
+      "id": "VMwareInc.VMwareWorkstation",
+      "name": "VMware Workstation",
+      "description": "VMware Workstation 是一个专业的虚拟机软件。",
+      "version": "25.0.1",
+      "icon_url": "https://dl.volan.top/winget-repo/images/vmware-workstation.png",
+      "category": "special",
+      "use_manifest": true,
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/v/VMwareInc/VMwareWorkstation/25.0.1/VMwareInc.VMwareWorkstation.yaml"
     }
   ]
 }

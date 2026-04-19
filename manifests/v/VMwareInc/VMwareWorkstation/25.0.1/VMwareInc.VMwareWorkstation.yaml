@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.12.0.schema.json
+
+PackageIdentifier: VMwareInc.VMwareWorkstation
+PackageVersion: 25.0.1
+PackageLocale: en-US
+Publisher: VMware, Inc.
+PackageName: VMware Workstation
+License: Proprietary
+Copyright: Copyright © 1998-2026 Broadcom.
+ShortDescription: VMware installation launcher
+InstallerType: exe
+InstallerSwitches:
+  Silent: /s /v"/qn EULAS_AGREED=1 DATACOLLECTION=0"
+  SilentWithProgress: /s /v"/qn EULAS_AGREED=1 DATACOLLECTION=0"
+Installers:
+- Architecture: x86
+  InstallerUrl: https://dl.volan.top/winget-repo/manifests/v/VMwareInc/VMwareWorkstation/25.0.1/VMware-Workstation-Full-25H2u1-25219725.exe
+  InstallerSha256: B592C47756D47C932A3CE2C2B83AD3AF1FA23CCC1DD1D3166A51BCC1D2BD58E0
+ManifestType: singleton
+ManifestVersion: 1.12.0

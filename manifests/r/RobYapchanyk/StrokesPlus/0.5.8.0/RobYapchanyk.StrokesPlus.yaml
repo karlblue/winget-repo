@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.singleton.1.12.0.schema.json
+
+PackageIdentifier: RobYapchanyk.StrokesPlus
+PackageVersion: 0.5.8.0
+PackageLocale: en-US
+Publisher: Rob Yapchanyk
+PackageName: StrokesPlus
+License: MIT
+ShortDescription: StrokesPlus.net Setup
+InstallerType: inno
+InstallerSwitches:
+  Silent: /silent
+  SilentWithProgress: /silent
+Installers:
+- Architecture: x64
+  InstallerUrl: https://dl.volan.top/winget-repo/manifests/r/RobYapchanyk/StrokesPlus/0.5.8.0/StrokesPlus.net_Setup_0.5.8.0.exe
+  InstallerSha256: 1C9B96D960D1D5F4746DF9F3C4FC54DD945DF1582F40BF2E483B8BB8E624D4C0
+ManifestType: singleton
+ManifestVersion: 1.12.0
