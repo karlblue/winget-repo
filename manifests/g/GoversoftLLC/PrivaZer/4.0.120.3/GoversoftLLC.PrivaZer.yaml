@@ -10,8 +10,8 @@ Copyright: Goversoft LLC 2010
 ShortDescription: One of the best free PC cleaner
 InstallerType: exe
 InstallerSwitches:
-  Silent: /S
-  SilentWithProgress: /S
+  Silent: -silent
+  SilentWithProgress: -silent
 Installers:
 - Architecture: x86
   InstallerUrl: https://dl.volan.top/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/PrivaZer_free.exe

@@ -98,7 +98,14 @@
       "name": "HWiNFO",
       "description": "HWiNFO 是一个专业的系统诊断工具。",
       "version": null,
-      "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png"
+      "icon_url": "https://dl.volan.top/winget-repo/images/hwinfo.png",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/hwinfo/HWiNFO.lnk",
+          "dest": "%USERPROFILE%\\Desktop\\HWiNFO.lnk"
+        }
+      ]
     },
     {
       "id": "KeePassXCTeam.KeePassXC",
@@ -209,7 +216,14 @@
       "version": "4.0.120.3",
       "icon_url": "https://dl.volan.top/winget-repo/images/privazer.png",
       "use_manifest": true,
-      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml"
+      "manifest_url": "https://karlblue.github.io/winget-repo/manifests/g/GoversoftLLC/PrivaZer/4.0.120.3/GoversoftLLC.PrivaZer.yaml",
+      "post_install": [
+        {
+          "type": "file_copy",
+          "src": "https://karlblue.github.io/winget-repo/post-install-config/privazer/data.ini",
+          "dest": "%LOCALAPPDATA%\\PrivaZer\\data.ini"
+        }
+      ]
     },
     {
       "id": "RevoUninstaller.RevoUninstaller",
