@@ -257,7 +257,7 @@
       "category": "general"
     },
     {
-      "id": "RobYapchanyk.StrokesPlus",
+      "id": "ARP\\Machine\\X64\\{103B9C4F-D1DF-43E9-89FF-25C48F9AD3F2}_is1",
       "name": "StrokesPlus",
       "description": "StrokesPlus 是一个鼠标手势软件。",
       "version": "0.5.8.0",
@@ -361,7 +361,7 @@
       ]
     },
     {
-      "id": "VMwareInc.VMwareWorkstation",
+      "id": "ARP\\Machine\\X64\\{572A0073-40AE-4866-8138-AE60C3D90EF3}",
       "name": "VMware Workstation",
       "description": "VMware Workstation 是一个专业的虚拟机软件。",
       "version": "25.0.1",
