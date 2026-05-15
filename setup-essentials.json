@@ -64,6 +64,7 @@
     },
     {
       "id": "Google.Chrome",
+      "alias": ["Google.Chrome.EXE"],
       "name": "Google Chrome",
       "description": "Google Chrome 是一款免费的浏览器。",
       "version": "146.0.7680.178",
